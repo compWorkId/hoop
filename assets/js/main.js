@@ -1,0 +1,21 @@
+$('#clientSlider').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:false,
+    dots: true,
+    responsive:{
+        0:{
+            autoplay:true,
+            autoplayTimeout:3000,
+            items:1
+        },
+        600:{
+            autoplay:true,
+            autoplayTimeout:3000,
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+});

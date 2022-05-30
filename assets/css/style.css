@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pm-color: #5D84FB;
+    --pm-color-light: #5d85fbaa;
+    --sec-color: #FD4255;
+    --sec-color-light: #fd4255a7;
+    --white-color : #fff;
+    --dark-color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--dark-color);
+    font-size: 16px;
+    line-height: 1.45;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 16px;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-blue {
+    background: #5D84FB;
+    color: #fff;
+    border: 1px solid #5D84FB;
+}
+
+.btn-blue:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.mt-neg-120{
+    margin-top: -120px;
+}
+.mtb-60{
+    margin: 60px 0;
+}
+.mtb-30{
+    margin: 30px 0;
+}
+.ptb-10{
+    padding: 10px 0;
+}
+.ptb-15{
+    padding: 15px 0;
+}
+
+.ptb-60{
+    padding: 60px 0;
+}
+
+.title-blue {
+    color: #5D84FB;
+    font-size: 20px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.title-black {
+    color: #000;
+    font-size: 20px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.desc-black {
+    font-size: 16px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+    color: #000;
+}
+
+.heading-red{
+    font-size: 30px;
+    color: #FD4255;
+    font-weight: 600;
+}
+
+.hoop-custom-primary-btn , .hoop-custom-secondary-btn {
+    background-color: var(--pm-color-light);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hoop-custom-secondary-btn {
+    background-color: var(--sec-color-light);
+}
+
+.hoop-custom-primary-btn:hover , .hoop-custom-primary-btn:active {
+    background-color: var(--pm-color);
+    color: var(--white-color);
+}
+
+.hoop-custom-secondary-btn:hover , .hoop-custom-secondary-btn:active {
+    background-color: var(--sec-color);
+    color: var(--white-color);
+}
+
+#hoop-custom-sign-in {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 350px;
+}
+
+#hoop-custom-sign-in form input {
+    min-height: 40px;
+    margin: 5px 0;
+}
+
+#hoop-custom-sign-in form label {
+    color: var(--dark-color);
+}
+
+#hoop-custom-sign-in .forgot-pass  {
+    color: var(--sec-color-light);
+    font-size: 14px;
+}
+
+#hoop-custom-sign-in span {
+     font-size: 12px;
+}
+
+.site-header {
+    padding: 10px 0;
+}
+
+.site-header .navbar-brand {
+    color: #000;
+    font-weight: 600;
+}
+
+.site-header .nav-link {
+    color: #000;
+    padding: 0 !important;
+    margin-right: 30px;
+}
+
+.site-header .nav-item:last-child .nav-link {
+    margin-right: 0;
+}
+
+
+.site-hero{
+    background-image: url('../img/hero-banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.hero-title {
+    color: #fff;
+}
+
+.hero-heading {
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+.category-card {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+}
+
+.event-card{
+    padding: 0 15px 30px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.event-card .desc-black {
+    -webkit-line-clamp: 6;
+}
+
+.footer-top {
+    background: #FD4255;
+    padding: 30px 0;
+}
+.footer-links  li {
+    padding: 10px 0;
+}
+
+.footer-links  ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-links li a {
+    color: #fff;
+    font-size: 16px;
+}
+.contact {
+    font-size: 16px;
+    color: #fff;
+    line-height: 2;
+}
+.text-red {
+    color: #FD4255;
+    font-size: 16px;
+    font-weight: 700;
+}
