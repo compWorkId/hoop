@@ -6,7 +6,7 @@
 
 :root {
     --pm-color: #5D84FB;
-    --pm-color-light: #5d85fbaa;
+    --pm-color-light: #5d85fbd9;
     --sec-color: #FD4255;
     --sec-color-light: #fd4255a7;
     --white-color : #fff;
@@ -21,6 +21,7 @@ body {
     font-size: 16px;
     line-height: 1.45;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -119,10 +120,11 @@ li {
     background-color: var(--pm-color-light);
     color: var(--white-color);
     border: none;
-    padding: 10px 25px;
+    padding: 10px 40px;
     border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
@@ -140,33 +142,6 @@ li {
     color: var(--white-color);
 }
 
-#hoop-custom-sign-in {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    max-width: 350px;
-}
-
-#hoop-custom-sign-in form input {
-    min-height: 40px;
-    margin: 5px 0;
-}
-
-#hoop-custom-sign-in form label {
-    color: var(--dark-color);
-}
-
-#hoop-custom-sign-in .forgot-pass  {
-    color: var(--sec-color-light);
-    font-size: 14px;
-}
-
-#hoop-custom-sign-in span {
-     font-size: 12px;
-}
 
 .site-header {
     padding: 10px 0;
@@ -254,4 +229,90 @@ li {
     color: #FD4255;
     font-size: 16px;
     font-weight: 700;
+}
+
+
+
+/* login styles */
+#hoop-custom-sign-in {
+    background: #f5f5f5;
+    height: 100vh;
+}
+
+#hoop-custom-sign-in .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#hoop-custom-sign-in-form {
+    min-width: 400px;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px 40px;
+}
+
+#hoop-custom-sign-in .container::after {
+    content: '';
+    background: #5d85fb0e;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    z-index: 99;
+    transform: rotate(45deg);
+    border-radius: 20px;
+}
+
+#hoop-custom-sign-in .container::before {
+    content: '';
+    background: #5d85fb35;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    z-index: 99;
+    transform: rotate(45deg);
+    border-radius: 20px;
+}
+
+#hoop-custom-sign-in-form h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#hoop-custom-sign-in form input {
+    min-height: 40px;
+    margin: 5px 0;
+    border-color: #ddd;
+    border-radius: 5px;
+}
+
+#hoop-custom-sign-in form input::placeholder {
+    color: #aaa;
+}
+
+#hoop-custom-sign-in .forgot-pass {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+#hoop-custom-sign-in .sign-up-link-here {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+#hoop-custom-sign-in .sign-up-link-here a {
+    text-decoration: underline;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+}
+
+#hoop-custom-sign-in-form label {
+    font-size: 14px;
+    color: var(--dark-color);
 }

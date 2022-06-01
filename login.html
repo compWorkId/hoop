@@ -11,19 +11,21 @@
 <body>
        <section id="hoop-custom-sign-in">
             <div class="container">
-                 <div class="row">
-                    <form>
-                        <div class="mb-3">
-                            <label for="emailaddress" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="emailaddress" aria-describedby="emailHelp">
+                 <div class="row h-100 align-items-center justify-content-center">
+                    <form id="hoop-custom-sign-in-form">
+                        <h2 class="text-center text-black my-4"> Sign In </h2>
+                        <div class="my-3">
+                            <input type="email" class="form-control" id="emailaddress" aria-describedby="emailHelp" placeholder="Email Address">
                         </div>
-                        <div class="mb-3">
-                            <label for="emailPassword" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="emailPassword">
+                        <div class="my-3">
+                            <input type="password" class="form-control" id="emailPassword" placeholder="Password">
                         </div>
-                        <div class="mt-4 d-flex align-items-center justify-content-between">
-                            <a href="./forgotpassword.html" class="ml-auto forgot-pass">Forgot password?</a>
-                            <button type="submit" class="btn hoop-custom-primary-btn ">Login</button>
+                        <div class="my-4 d-flex flex-column align-items-center justify-content-between">
+                            <button type="submit" class=" my-2 btn hoop-custom-primary-btn ">Login</button>
+                            <a href="./forgotpassword.html" class="my-3 ml-auto forgot-pass"> Forgot password? </a>
+                        </div>
+                        <div class="sign-up-link-here my-4 d-flex align-items-center justify-content-center">
+                            <p class=""> Don't have an account? <a href="./register.html" class=""> Sign up </a></p>
                         </div>
                     </form>
                  </div>

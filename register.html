@@ -14,32 +14,29 @@
     <section id="hoop-custom-sign-in">
         <div class="container">
             <div class="row">
-                <form>
-                   <div class="d-flex align-items-center justify-content-between" >
-                        <div class="mb-3">
-                            <label for="fname" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="fname" aria-describedby="fname" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="lname" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lname" aria-describedby="lname" required>
-                        </div>
-                   </div>
+                <form id="hoop-custom-sign-in-form">
+                    <h2 class="text-center text-black my-4"> Sign Up </h2>
                     <div class="mb-3">
-                        <label for="uname" class="form-label">UserName</label>
-                        <input type="text" class="form-control" id="uname" aria-describedby="uname" required>
+                        <input type="text" class="form-control" id="fname" aria-describedby="fname" placeholder="First Name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="emailaddress" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="emailaddress" aria-describedby="emailHelp" required>
+                        <input type="text" class="form-control" id="lname" aria-describedby="lname" placeholder="Last Name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="emailPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="emailPassword" required>
+                        <input type="text" class="form-control" id="uname" aria-describedby="uname" placeholder="Username" required>
                     </div>
                     <div class="mb-3">
-                        <label for="emailPassword" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="emailPassword" required>
+                        <input type="email" class="form-control" id="emailaddress" aria-describedby="emailHelp" placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="emailPassword" placeholder="Password" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="emailPassword" placeholder="Confirm password" required>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <input type="checkbox">
+                        <label class="p-2"> I accept hoopster terms & conditions </label>
                     </div>
                     <div class="mt-4 d-flex align-items-center justify-content-between">
                         <a href="./login.html" class="ml-auto forgot-pass">Already a user?</a>
